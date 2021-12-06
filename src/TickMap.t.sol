@@ -10,10 +10,6 @@ contract TickMapTest is DSTest {
 
     TickMaps.TickMap public tickMap;
 
-    function setUp() public {
-        delete tickMap;
-    }
-
     function _normalize(int24 tick) internal pure returns (int24) {
         if (tick < Constants.MIN_TICK) return tick % Constants.MIN_TICK;
         if (tick > Constants.MAX_TICK) return tick % Constants.MAX_TICK;

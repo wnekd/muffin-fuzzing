@@ -6,7 +6,6 @@ import "@deliswap-muffin/libraries/math/PoolMath.sol";
 
 contract PoolMathTest is DSTest {
     uint256 private constant Q72 = 0x1000000000000000000;
-    uint256 private constant Q184 = 0x10000000000000000000000000000000000000000000000;
 
     function abs(int256 x) internal pure returns (uint256 z) {
         unchecked {

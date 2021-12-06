@@ -10,10 +10,6 @@ contract NextTicksTest is DSTest {
 
     NextTicks.Info internal nextTicks;
 
-    function setUp() public {
-        delete nextTicks;
-    }
-
     function _normalize(int24 tick) internal pure returns (int24) {
         if (tick < Constants.MIN_TICK) return tick % Constants.MIN_TICK;
         if (tick > Constants.MAX_TICK) return tick % Constants.MAX_TICK;
