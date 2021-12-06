@@ -1,1 +1,12 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# vscode
+.vscode
+
+# dapptools
 /out
+cache

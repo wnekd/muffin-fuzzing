@@ -1,0 +1,13 @@
+{
+  "printWidth": 120,
+  "explicitTypes": "preserve",
+  "overrides": [
+    {
+      "files": "*.t.sol",
+      "options": {
+        "printWidth": 120,
+        "explicitTypes": "always"
+      }
+    }
+  ]
+}
